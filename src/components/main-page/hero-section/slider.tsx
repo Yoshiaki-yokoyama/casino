@@ -30,11 +30,11 @@ export default function Slider({
     });
   }, [totalPages]);
 
-  const prevSlide = useCallback(() => {
-    setCurrentPage((prevPage) => {
-      return prevPage - 1 < 0 ? totalPages - 1 : prevPage - 1;
-    });
-  }, [totalPages]);
+  // const prevSlide = useCallback(() => {
+  //   setCurrentPage((prevPage) => {
+  //     return prevPage - 1 < 0 ? totalPages - 1 : prevPage - 1;
+  //   });
+  // }, [totalPages]);
 
   useEffect(() => {
     intervalRef.current = setInterval(nextSlide, autoSlideInterval);
