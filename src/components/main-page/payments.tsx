@@ -9,7 +9,7 @@ const Payments = () => {
     <div className="flex lg:flex-row flex-col lg:items-start  bg-slate-700/50 rounded-lg p-6 lg:gap-0 gap-4">
       {/* Text section */}
       <div className="w-full lg:w-[25%] text-center">
-        <h2 className="text-2xl font-bold text-white">You don't have Crypto?</h2>
+        <h2 className="text-2xl font-bold text-white">You dont have Crypto?</h2>
         <p className="text-white/80">No problem.</p>
       </div>
 
