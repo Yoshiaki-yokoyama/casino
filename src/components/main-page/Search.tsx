@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import { Search, ChevronDown } from 'lucide-react';
+import Image from 'next/image';
 
 const GameSearchSection = () => {
   const [activeButton, setActiveButton] = useState('All Games');
@@ -66,9 +67,11 @@ const GameSearchSection = () => {
                 }`}
               >
                 <div className="flex items-center gap-2">
-                  <img
+                  <Image
                     src={button.icon}
                     alt={`${button.name} icon`}
+                    width={100}
+                    height={100}
                     className="w-4 h-4 opacity-70"
                     onError={(e) => {
                       (e.target as HTMLImageElement).style.display = 'none';

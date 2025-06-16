@@ -12,10 +12,8 @@ interface MainSlideProps {
 
 export default function MainSlide({ title, icon, images }: MainSlideProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [visibleItems, setVisibleItems] = useState(7);
   const [isAutoScrolling, setIsAutoScrolling] = useState(true);
   const [itemWidth, setItemWidth] = useState(160);
-  const [containerWidth, setContainerWidth] = useState(0);
   const autoScrollRef = useRef<NodeJS.Timeout | null>(null);
   const resumeAutoScrollRef = useRef<NodeJS.Timeout | null>(null);
   const containerRef = useRef<HTMLDivElement>(null);
@@ -34,15 +32,12 @@ export default function MainSlide({ title, icon, images }: MainSlideProps) {
           const availableWidth = containerWidth - (2 * gap); // 2 gaps between 3 images
           const calculatedWidth = Math.floor(availableWidth / 3);
           setItemWidth(calculatedWidth);
-          setVisibleItems(3);
         } else {
           // Desktop: 7 full images
           const availableWidth = containerWidth - (6 * gap); // 6 gaps between 7 images
           const calculatedWidth = Math.floor(availableWidth / 7);
           setItemWidth(calculatedWidth);
-          setVisibleItems(7);
         }
-        setContainerWidth(containerWidth);
       }
     };
 

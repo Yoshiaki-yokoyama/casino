@@ -60,7 +60,7 @@ export default function Footer() {
         {/* Links sections - responsive grid */}
         <div className="grid grid-cols-2 md:grid-cols-7 gap-8 mb-12">
             <div className="col-span-2">
-                <img src="/images/footer/footer-1.png" alt="footer-1" className="w-12 h-12" />
+                <Image width={100} height={100} src="/images/footer/footer-1.png" alt="footer-1" className="w-12 h-12" />
                 <p className="text-lg text-white/70">
                 Strike it rich at *******! Experience heart-pounding action with massive jackpots, fast payouts, and VIP treatment that keeps champions coming back. Join thousands of winners today - your fortune awaits!
                 </p>
@@ -83,8 +83,8 @@ export default function Footer() {
             </div>
           ))}
           <div className="block sm:hidden flex flex-col gap-2 w-full">
-            <img src="/images/footer/footer-3-1.png" alt="footer-1" className="w-full h-1/2" />
-            <img src="/images/footer/footer-3-2.png" alt="footer-1" className="w-full h-1/2" />
+            <Image width={100} height={100} src="/images/footer/footer-3-1.png" alt="footer-1" className="w-full h-1/2" />
+            <Image width={100} height={100} src="/images/footer/footer-3-2.png" alt="footer-1" className="w-full h-1/2" />
             
           </div>
         </div>
