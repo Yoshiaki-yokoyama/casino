@@ -17,7 +17,7 @@ export default function HeroSection() {
   ];
 
   return (
-    <div className="w-full space-y-4 min-h-[calc(100vh-120px)] flex flex-col">
+    <div className="w-full space-y-4 mb-4 flex flex-col">
       {/* Top Section - Carousel */}
       <div className="relative w-full h-[50vh]">
         <Slider images={carouselImages} className="w-full h-full" />

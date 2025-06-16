@@ -5,6 +5,7 @@ import Payments from '@/components/main-page/payments';
 import GameSearchSection from '@/components/main-page/Search';
 import Footer from '@/components/ui/footer';
 import MainSlide from '@/components/ui/mainSlide';
+import BottomNavBar from '@/components/ui/MobileNavbar';
 import Providers from '@/components/ui/providers';
 
 const featuredGames = [
@@ -37,19 +38,51 @@ const newReleases = [
   '/images/new-releases/release-4.png'
 ];
 
-const popularGames = [
-  '/images/image-1.png',
-  '/images/image-2.png',
-  '/images/image-3.png',
-  '/images/image-4.png',
-  '/images/image-1.png',
-  '/images/image-2.png',
-  '/images/image-3.png',
-  '/images/image-4.png',
-  '/images/image-1.png',
-  '/images/image-2.png',
-  '/images/image-3.png',
-  '/images/image-4.png'
+
+const hotGames = [
+  '/images/hot-games/hot-1.png',
+  '/images/hot-games/hot-2.png',
+  '/images/hot-games/hot-3.png',
+  '/images/hot-games/hot-4.png',
+  '/images/hot-games/hot-5.png',
+  '/images/hot-games/hot-6.png',
+  '/images/hot-games/hot-7.png',
+  '/images/hot-games/hot-8.png',
+  '/images/hot-games/hot-1.png',
+  '/images/hot-games/hot-2.png',
+  '/images/hot-games/hot-3.png',
+  '/images/hot-games/hot-4.png'
+];
+
+const bonusBuyGames = [
+  '/images/bonus-buy/bonus-1.png',
+  '/images/bonus-buy/bonus-2.png',
+  '/images/bonus-buy/bonus-3.png',
+  '/images/bonus-buy/bonus-4.png',
+  '/images/bonus-buy/bonus-5.png',
+  '/images/bonus-buy/bonus-6.png',
+  '/images/bonus-buy/bonus-7.png',
+  '/images/bonus-buy/bonus-8.png',
+  '/images/bonus-buy/bonus-1.png',
+  '/images/bonus-buy/bonus-2.png',
+    '/images/bonus-buy/bonus-3.png',
+    '/images/bonus-buy/bonus-4.png'
+];
+
+
+const liveGames = [
+  '/images/live-games/live-1.png',
+  '/images/live-games/live-2.png',
+  '/images/live-games/live-3.png',
+  '/images/live-games/live-4.png',
+  '/images/live-games/live-5.png',
+  '/images/live-games/live-6.png',
+  '/images/live-games/live-7.png',
+  '/images/live-games/live-8.png',
+  '/images/live-games/live-1.png',
+  '/images/live-games/live-2.png',
+  '/images/live-games/live-3.png',
+  '/images/live-games/live-4.png'
 ];
 
 export default function Home() {
@@ -73,11 +106,25 @@ export default function Home() {
         images={newReleases} 
       />
       
-      {/* Popular Games Slider */}
+      {/* Hot Games Slider */}
       <MainSlide 
-        title="Popular Games" 
-        icon="/images/icons/icon-1.png" 
-        images={popularGames} 
+        title="Hot Games" 
+        icon="/images/hot-games/hot.png" 
+        images={hotGames} 
+      />
+
+      {/* Bonus Buy Games Slider */}
+      <MainSlide 
+        title="Bonus Buy" 
+        icon="/images/bonus-buy/bonus.png" 
+        images={bonusBuyGames} 
+      />
+
+      {/* Live Games Slider */}
+      <MainSlide 
+        title="Live Games" 
+        icon="/images/live-games/live.png" 
+        images={liveGames} 
       />
 
             {/* Providers Section */}
@@ -92,6 +139,8 @@ export default function Home() {
             {/* Footer Section */}
             <Footer />
 
+      {/* Mobile Bottom Navbar */}
+      <BottomNavBar />
      
     </div>
   );
