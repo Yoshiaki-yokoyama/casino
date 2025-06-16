@@ -106,7 +106,7 @@ export default function Footer() {
 
        
 
-       
+  
         {/* Copyright and legal text */}
         <div className="relative  text-center text-sm text-white/70 space-y-4">
          {/* Additional images row */}
@@ -130,8 +130,8 @@ export default function Footer() {
           </p>
         </div>
 
-         {/* Auth buttons - visible on mobile */}
-        <div className="flex justify-between gap-4 mb-8 md:hidden">
+             {/* Auth buttons - visible on mobile */}
+             <div className="mt-4 flex justify-between gap-4 mb-8 md:hidden">
           <button className="w-1/2 px-6 py-2 bg-blue-600 hover:bg-blue-700 rounded-md font-medium transition">
             LOG IN
           </button>
@@ -140,16 +140,6 @@ export default function Footer() {
           </button>
         </div>
 
-
-        {/* Auth buttons - hidden on large screens */}
-        {/* <div className="flex w-full md:hidden justify-between mt-8">
-          <button className="w-1/2 px-8 py-3 bg-blue-600 hover:bg-blue-700 rounded-md font-medium transition">
-            LOG IN
-          </button>
-          <button className="w-1/2 px-8 py-3 bg-green-600 hover:bg-green-700 rounded-md font-medium transition">
-            SIGN UP
-          </button>
-        </div> */}
       </div>
     </footer>
   );
